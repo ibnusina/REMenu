@@ -34,7 +34,6 @@
 		30E0F7AC16D54641001949EA /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7A716D54641001949EA /* REMenu.m */; };
 		30E0F7AD16D54641001949EA /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7A916D54641001949EA /* REMenuItem.m */; };
 		30E0F7AE16D54641001949EA /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7AB16D54641001949EA /* REMenuItemView.m */; };
-		30E0F7B116D54CE0001949EA /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E0F7B016D54CE0001949EA /* REMenuContainerView.m */; };
 		30E405CC181581B200C6B0F4 /* Balloon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30E405CB181581B200C6B0F4 /* Balloon@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -80,8 +79,6 @@
 		30E0F7A916D54641001949EA /* REMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = REMenuItem.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		30E0F7AA16D54641001949EA /* REMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItemView.h; sourceTree = "<group>"; };
 		30E0F7AB16D54641001949EA /* REMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = REMenuItemView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		30E0F7AF16D54CE0001949EA /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuContainerView.h; sourceTree = "<group>"; };
-		30E0F7B016D54CE0001949EA /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuContainerView.m; sourceTree = "<group>"; };
 		30E405CB181581B200C6B0F4 /* Balloon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Balloon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,8 +197,6 @@
 				30E0F7A916D54641001949EA /* REMenuItem.m */,
 				30E0F7AA16D54641001949EA /* REMenuItemView.h */,
 				30E0F7AB16D54641001949EA /* REMenuItemView.m */,
-				30E0F7AF16D54CE0001949EA /* REMenuContainerView.h */,
-				30E0F7B016D54CE0001949EA /* REMenuContainerView.m */,
 			);
 			name = REMenu;
 			path = ../REMenu;
@@ -287,7 +282,6 @@
 				30E0F7AC16D54641001949EA /* REMenu.m in Sources */,
 				30E0F7AD16D54641001949EA /* REMenuItem.m in Sources */,
 				30E0F7AE16D54641001949EA /* REMenuItemView.m in Sources */,
-				30E0F7B116D54CE0001949EA /* REMenuContainerView.m in Sources */,
 				30B00DDB17CCFD280010D439 /* ActivityViewController.m in Sources */,
 				30B00DDC17CCFD280010D439 /* ExploreViewController.m in Sources */,
 				30B00DDD17CCFD280010D439 /* HomeViewController.m in Sources */,

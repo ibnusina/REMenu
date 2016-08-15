@@ -142,9 +142,6 @@
         view.layer.borderColor = self.borderColor.CGColor;
         view.layer.borderWidth = self.borderWidth;
         view.layer.masksToBounds = YES;
-        view.layer.shouldRasterize = YES;
-        view.layer.rasterizationScale = [UIScreen mainScreen].scale;
-        view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         view;
     });
     
@@ -197,7 +194,7 @@
         
         UIView *separatorView = [[UIView alloc] initWithFrame:CGRectMake(self.separatorOffset.width,
                                                                          index * self.itemHeight + index * self.separatorHeight + self.separatorOffset.height,
-                                                                         rect.size.width - self.separatorOffset.width,
+                                                                         rect.size.width,
                                                                          self.separatorHeight)];
         separatorView.backgroundColor = self.separatorColor;
         separatorView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -223,9 +220,9 @@
     // Set up frames
     //
     self.menuWrapperView.frame = CGRectMake(0, -self.combinedHeight, self.viewToShowFrom.bounds.size.width, self.combinedHeight);
-	CGFloat height = MIN(self.viewToShowFrom.bounds.size.height - self.navigationBarOffset, self.combinedHeight);
-	self.menuView.frame = CGRectMake(0, 0, self.viewToShowFrom.bounds.size.width, height);
-	self.menuView.contentSize = CGSizeMake(self.viewToShowFrom.bounds.size.width, self.combinedHeight);
+	CGFloat height = MIN(rect.size.height, self.combinedHeight);
+	self.menuView.frame = CGRectMake(0, 0, rect.size.width, height);
+	self.menuView.contentSize = CGSizeMake(rect.size.width, self.combinedHeight);
 
 	if (REUIKitIsFlatMode() && self.liveBlur) {
         self.toolbar.frame = self.menuWrapperView.bounds;
